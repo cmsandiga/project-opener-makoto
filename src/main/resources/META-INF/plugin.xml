@@ -1,0 +1,41 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.makoto.project-opener-makoto</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>Project Opener Makoto</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com/cmsandiga">Makoto</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+        Quickly open projects by name. Configure root directories to scan for projects (Gradle, Maven, etc.)
+        and use Ctrl+Alt+Shift+M (Mac: ⌃⌥⇧M) to search and open any project.<br>
+        <em>Similar to Project Opener plugin</em>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="ProjectOpener.GoToProject"
+                class="com.makoto.projectopener.GoToProjectAction"
+                text="Go to Project"
+                description="Open project by name from configured root directories">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift M"/>
+            <add-to-group group-id="OpenProjectWindows" anchor="last"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable parentId="tools"
+                                instance="com.makoto.projectopener.ProjectOpenerConfigurable"
+                                id="com.makoto.projectopener.ProjectOpenerConfigurable"
+                                displayName="Project Opener Makoto"/>
+    </extensions>
+</idea-plugin>
