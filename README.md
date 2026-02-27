@@ -41,7 +41,7 @@ Go to **Settings** (Ctrl+Alt+S / Cmd+,) → **Tools** → **Project Opener Makot
 
 ### 2. Open a project
 
-Press **Ctrl+Alt+Shift+M** (Windows/Linux) or **Ctrl+Option+Shift+M** (macOS)
+Press **Ctrl+Alt+Shift+O** (Windows/Linux) or **Ctrl+Option+Shift+O** (macOS)
 
 - The "Enter Project Name" popup appears centered in the IDE
 - Start typing to filter projects by name

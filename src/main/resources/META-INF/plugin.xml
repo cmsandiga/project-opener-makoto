@@ -14,7 +14,7 @@
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
     <description><![CDATA[
         Quickly open projects by name. Configure root directories to scan for projects (Gradle, Maven, etc.)
-        and use Ctrl+Alt+Shift+M (Mac: ⌃⌥⇧M) to search and open any project.<br>
+        and use Ctrl+Alt+Shift+O (Mac: ⌃⌥⇧O) to search and open any project.<br>
         <em>Similar to Project Opener plugin</em>
     ]]></description>
 
@@ -27,7 +27,7 @@
                 class="com.makoto.projectopener.GoToProjectAction"
                 text="Go to Project"
                 description="Open project by name from configured root directories">
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift M"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift O"/>
             <add-to-group group-id="OpenProjectWindows" anchor="last"/>
         </action>
     </actions>
