@@ -84,3 +84,7 @@ The distributable `.zip` is generated in `build/distributions/`.
 
 [MIT License](LICENSE) — free to use, modify, and distribute.
 
+---
+
+*Powered by [Cursor](https://cursor.com) vibe coding* <img src="https://www.cursor.com/favicon.ico" alt="Cursor" width="20" height="20">
+
