@@ -40,7 +40,7 @@ final class ProjectDiscoveryService {
     }
 
     private fun scanForProjects(rootDir: File, currentDir: File, result: MutableList<ProjectInfo>, depth: Int = 0) {
-        if (isProjectDirectory(currentDir)) {
+        if (currentDir != rootDir && isProjectDirectory(currentDir)) {
             result.add(ProjectInfo(name = currentDir.name, path = currentDir.absolutePath))
             return
         }
