@@ -45,4 +45,5 @@ bin/
 ### IntelliJ Platform Plugin ###
 .intellijPlatform/
 .run/
-.idea/screenshot_18753.png
+.idea/
+screenshot_18753.png
