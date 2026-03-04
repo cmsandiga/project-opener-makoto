@@ -1,14 +1,14 @@
 package com.makoto.projectopener
 
-import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory
 import com.intellij.openapi.fileChooser.FileChooser
+import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory
 import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.util.NlsContexts
 import com.intellij.ui.CollectionListModel
+import com.intellij.ui.ListSpeedSearch
 import com.intellij.ui.ToolbarDecorator
 import com.intellij.ui.components.JBList
 import com.intellij.ui.dsl.builder.panel
-import com.intellij.ui.ListSpeedSearch
 import javax.swing.JComponent
 import javax.swing.JPanel
 
